@@ -3,12 +3,13 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-// Serve static HTML file
+// Serve all static files (images, css, js, etc.)
+app.use(express.static(__dirname));
+
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'presentation.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
-    console.log(`Open this link in your browser to start the presentation!`);
 });
