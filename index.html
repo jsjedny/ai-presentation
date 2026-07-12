@@ -254,6 +254,84 @@
             color: #6b7280;
         }
     </style>
+
+    <style>
+        .slide {
+            display: block !important;
+            visibility: hidden;
+            pointer-events: none;
+            opacity: 0;
+            transform: translateX(80px) scale(.98);
+            transition: opacity .7s, transform .7s, visibility 0s .7s
+        }
+
+        .slide.active {
+            visibility: visible;
+            pointer-events: auto;
+            opacity: 1;
+            transform: translateX(0) scale(1);
+            transition: opacity .7s, transform .7s
+        }
+
+        .slide.active h1,
+        .slide.active h2,
+        .slide.active h3,
+        .slide.active p,
+        .slide.active li,
+        .slide.active .card,
+        .slide.active .timeline-item,
+        .slide.active .slide-img {
+            animation: fadeUp .7s both
+        }
+
+        .slide.active .slide-img {
+            animation: zoomIn .9s both
+        }
+
+        .slide.active li:nth-child(1),
+        .slide.active .card:nth-child(1) {
+            animation-delay: .1s
+        }
+
+        .slide.active li:nth-child(2),
+        .slide.active .card:nth-child(2) {
+            animation-delay: .2s
+        }
+
+        .slide.active li:nth-child(3),
+        .slide.active .card:nth-child(3) {
+            animation-delay: .3s
+        }
+
+        .slide.active li:nth-child(4),
+        .slide.active .card:nth-child(4) {
+            animation-delay: .4s
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(.85)
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+    </style>
 </head>
 
 <body>
