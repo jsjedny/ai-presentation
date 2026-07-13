@@ -65,11 +65,11 @@
 
         .slide {
             position: absolute;
-            top: 80px;
+            top: 0px;
             left: 0;
             width: 100%;
-            height: calc(100vh - 80px);
-            padding: 40px;
+            /* height: calc(100vh - 80px); */
+            padding: 0px;
             display: none;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
@@ -204,16 +204,6 @@
             color: #ef4444;
         }
 
-        /* Stable Local Path Images style */
-        .slide-img {
-            width: 100%;
-            max-width: 500px;
-            max-height: 65vh;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-            border: 2px solid rgba(59, 130, 246, 0.3);
-            object-fit: contain;
-        }
 
         .nav-btn {
             position: fixed;
@@ -248,8 +238,8 @@
 
         .slide-footer {
             position: fixed;
-            bottom: 20px;
-            left: 40px;
+            bottom: 0px;
+            left: 0px;
             font-size: 10pt;
             color: #6b7280;
         }
@@ -264,19 +254,20 @@
 
         .slide {
             position: absolute;
-            top: 80px;
+            top: 60px;
+            bottom: 10px;
             left: 0;
             width: 100%;
-            height: calc(100vh - 80px);
-            padding: 10px;
+            /* height: calc(100vh - 80px); */
+            padding: 0px;
             margin: 0;
         }
 
         .full-image-slide {
             width: 100%;
             height: 100%;
-            border-radius: 32px;
             overflow: hidden;
+            object-fit: contain;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -397,88 +388,88 @@
 
         <div class="slide active">
             <div class="full-image-slide">
-                <img class="bg-img" src="./images/1.png" alt="Slide 1">
-                <img class="slide-img" src="./images/1.png" alt="Slide 1">
+                <img class="bg-img" src="./images/img1.png" alt="Slide 1">
+                <img class="slide-img" src="./images/img1.png" alt="Slide 1">
             </div>
             <div class="slide-footer">Slide 1 of 11</div>
         </div>
 
         <div class="slide">
             <div class="full-image-slide">
-                <img class="bg-img" src="./images/2.png" alt="Slide 2">
-                <img class="slide-img" src="./images/2.png" alt="Slide 2">
+                <img class="bg-img" src="./images/img2.png" alt="Slide 2">
+                <img class="slide-img" src="./images/img2.png" alt="Slide 2">
             </div>
             <div class="slide-footer">Slide 2 of 11</div>
         </div>
 
         <div class="slide">
             <div class="full-image-slide">
-                <img class="bg-img" src="./images/3.png" alt="Slide 3">
-                <img class="slide-img" src="./images/3.png" alt="Slide 3">
+                <img class="bg-img" src="./images/img3.png" alt="Slide 3">
+                <img class="slide-img" src="./images/img3.png" alt="Slide 3">
             </div>
             <div class="slide-footer">Slide 3 of 11</div>
         </div>
 
         <div class="slide">
             <div class="full-image-slide">
-                <img class="bg-img" src="./images/4.png" alt="Slide 3">
-                <img class="slide-img" src="./images/4.png" alt="Slide 3">
+                <img class="bg-img" src="./images/img4.png" alt="Slide 3">
+                <img class="slide-img" src="./images/img4.png" alt="Slide 3">
             </div>
             <div class="slide-footer">Slide 4 of 11</div>
         </div>
 
         <div class="slide">
             <div class="full-image-slide">
-                <img class="bg-img" src="./images/5.png" alt="Slide 3">
-                <img class="slide-img" src="./images/5.png" alt="Slide 3">
+                <img class="bg-img" src="./images/img5.png" alt="Slide 3">
+                <img class="slide-img" src="./images/img5.png" alt="Slide 3">
             </div>
             <div class="slide-footer">Slide 5 of 11</div>
         </div>
 
         <div class="slide">
             <div class="full-image-slide">
-                <img class="bg-img" src="./images/6.png" alt="Slide 3">
-                <img class="slide-img" src="./images/6.png" alt="Slide 3">
+                <img class="bg-img" src="./images/img6.png" alt="Slide 3">
+                <img class="slide-img" src="./images/img6.png" alt="Slide 3">
             </div>
             <div class="slide-footer">Slide 6 of 11</div>
         </div>
 
         <div class="slide">
             <div class="full-image-slide">
-                <img class="bg-img" src="./images/7.png" alt="Slide 3">
-                <img class="slide-img" src="./images/7.png" alt="Slide 3">
+                <img class="bg-img" src="./images/img7.png" alt="Slide 3">
+                <img class="slide-img" src="./images/img7.png" alt="Slide 3">
             </div>
             <div class="slide-footer">Slide 7 of 11</div>
         </div>
 
         <div class="slide">
             <div class="full-image-slide">
-                <img class="bg-img" src="./images/8.png" alt="Slide 3">
-                <img class="slide-img" src="./images/8.png" alt="Slide 3">
+                <img class="bg-img" src="./images/img8.png" alt="Slide 3">
+                <img class="slide-img" src="./images/img8.png" alt="Slide 3">
             </div>
             <div class="slide-footer">Slide 8 of 11</div>
         </div>
 
         <div class="slide">
             <div class="full-image-slide">
-                <img class="bg-img" src="./images/9.png" alt="Slide 3">
-                <img class="slide-img" src="./images/9.png" alt="Slide 3">
+                <img class="bg-img" src="./images/img9.png" alt="Slide 3">
+                <img class="slide-img" src="./images/img9.png" alt="Slide 3">
             </div>
             <div class="slide-footer">Slide 9 of 11</div>
         </div>
 
         <div class="slide">
             <div class="full-image-slide">
-                <img class="bg-img" src="./images/10.png" alt="Slide 3">
-                <img class="slide-img" src="./images/10.png" alt="Slide 3">
+                <img class="bg-img" src="./images/img10.png" alt="Slide 3">
+                <img class="slide-img" src="./images/img10.png" alt="Slide 3">
             </div>
             <div class="slide-footer">Slide 10 of 11</div>
         </div>
 
         <div class="slide">
             <div class="full-image-slide">
-                <img class="bg-img" src="./images/11.png" alt="Slide 3">
-                <img class="slide-img" src="./images/11.png" alt="Slide 3">
+                <img class="bg-img" src="./images/img11.png" alt="Slide 3">
+                <img class="slide-img" src="./images/img11.png" alt="Slide 3">
             </div>
             <div class="slide-footer">Slide 11 of 11</div>
         </div>
